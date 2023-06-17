@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: white;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .mi-div {
+      width: 60%;
+      height: 400px;
+      background-color:gray;
+      transition: background-color 0.3s ease;
+      padding: 20px;
+    }
+
+    body.dark-mode {
+      background-color: black;
+    }
+
+    body.dark-mode .mi-div {
+      background-color: rgb(16, 83, 14);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="cambiarContrasteDiv()">Cambiar Contraste</button>
+  <div class="mi-div">
+    <p class="medium">¡BIENVENIDOS A NUESTRA PÁGINA DE KING GARDEN!</p>
+    <p>En esta página encontrarás una amplia variedad de plantas, herramientas de jardinería y consejos para el cuidado de tus plantas.</p>
+    <p>Somos una tienda online especializada en plantas de interior y exterior, con envío a domicilio en todo Copiapó, Chile.</p>
+    <p>Además, realizamos entregas en Paipote, Tierra Amarilla y Caldera.</p>
+    <p>En King Garden, te ofrecemos:</p>
+    <ul>
+      <li>Plantas de Interior: Descubre nuestras hermosas plantas de interior que agregarán vida y belleza a tu hogar.</li>
+      <li>Plantas de Exterior: Encuentra una amplia selección de plantas de exterior que prosperarán en tu jardín, patio o balcón.</li>
+      <li>Herramientas de Jardinería: Descubre nuestras herramientas de jardinería duraderas y funcionales que te ayudarán a cuidar tus plantas de manera efectiva.</li>
+      <li>Consejos de Cuidado de Plantas: ¿No estás seguro de cómo cuidar tus plantas? No te preocupes, estamos aquí para ayudarte.</li>
+    </ul>
+    <p>Realizar un pedido en nuestra tienda online es fácil y conveniente. Simplemente selecciona los productos que deseas, completa el proceso de compra y nosotros nos encargaremos de entregártelos directamente en la puerta de tu casa.</p>
+  </div>
+
+  <script>
+    function cambiarContrasteDiv() {
+      const bodyElement = document.body;
+      const divElement = document.querySelector('.mi-div');
+
+      bodyElement.classList.toggle('dark-mode');
+      divElement.classList.toggle('white-bg');
+
+      if (divElement.classList.contains('white-bg')) {
+        divElement.style.backgroundColor = 'gray';
+      } else {
+        divElement.style.backgroundColor = 'red';
+      }
+    }
+  </script>
+</body>
+</html>

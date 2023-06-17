@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+    }
+    
+    .high-contrast {
+      background-color: black;
+      color: white;
+    }
+    
+    #myDiv {
+      background-color: #D9EEE1;
+    }
+    
+    .high-contrast #myDiv {
+      background-color: #193d3d;
+    }
+    
+    footer {
+      background-color: #f5f5f5;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .high-contrast footer {
+      background-color: #0f3e3e;
+    }
+    
+    /* Regla adicional para cambiar el color del texto en modo de alto contraste */
+    .high-contrast p,
+    .high-contrast li {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="myDiv">
+    <p class="medium">¡BIENVENIDOS A NUESTRA PÁGINA DE KING GARDEN!</p>
+    <p>En esta página encontrarás una amplia variedad de plantas, herramientas de jardinería y consejos para el cuidado de tus plantas.</p>
+    <p>Somos una tienda online especializada en plantas de interior y exterior, con envío a domicilio en todo Copiapó, Chile.</p>
+    <p>Además, realizamos entregas en Paipote, Tierra Amarilla y Caldera.</p>
+    <p>En King Garden, te ofrecemos:</p>
+    <ul>
+      <li>Plantas de Interior: Descubre nuestras hermosas plantas de interior que agregarán vida y belleza a tu hogar.</li>
+      <li>Plantas de Exterior: Encuentra una amplia selección de plantas de exterior que prosperarán en tu jardín, patio o balcón.</li>
+      <li>Herramientas de Jardinería: Descubre nuestras herramientas de jardinería duraderas y funcionales que te ayudarán a cuidar tus plantas de manera efectiva.</li>
+      <li>Consejos de Cuidado de Plantas: ¿No estás seguro de cómo cuidar tus plantas? No te preocupes, estamos aquí para ayudarte.</li>
+    </ul>
+    <p>Realizar un pedido en nuestra tienda online es fácil y conveniente. Simplemente selecciona los productos que deseas, completa el proceso de compra y nosotros nos encargaremos de entregártelos directamente en la puerta de tu casa.</p>
+  </div>
+
+  <button onclick="toggleContrast()">Cambiar contraste</button>
+
+  <footer>
+    Este es el footer de la página.
+  </footer>
+
+  <script>
+    function toggleContrast() {
+      var body = document.body;
+      body.classList.toggle("high-contrast");
+    }
+  </script>
+</body>
+</html>
