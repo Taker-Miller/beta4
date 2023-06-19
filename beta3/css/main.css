@@ -50,6 +50,7 @@
 
 
 
+
 /*FUENTES*/
 .small {
   font-size: 9px;
@@ -60,8 +61,10 @@
 }
 
 .large {
-  font-size: 20px;
+  font-size: 40px;
 }
+
+
 
 /**/
 
@@ -130,57 +133,14 @@ th, td {
 }
 
 
-/* Estilos adicionales para el formulario */
-#myForm {
-  margin-top: 20px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
 
-#myForm label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
+/**/
 
-#myForm input[type="text"],
-#myForm input[type="number"],
-#myForm input[type="date"],
-#myForm input[type="email"],
-#myForm input[type="password"],
-#myForm input[type="checkbox"],
-#myForm select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-  background-color: #fff;
-  color: #333;
-}
 
-#myForm input[type="checkbox"] {
-  display: inline-block;
-  margin-top: 5px;
-}
 
-#myForm input[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-/*Fin FORMULARIO*/
 
 .body {
-  background-color: rgb(146, 142, 142);
+  background-color: rgb(135, 135, 135);
 }
 
 .columna1 {
@@ -248,7 +208,7 @@ th, td {
 
 
 .box {
-  background-color: #0367a1;
+  background-color: #1a77ad;
   border-style: solid;
  
 }
@@ -263,17 +223,7 @@ th, td {
 
 }
 
-.pero {
-  color: #ff7b00;
-}
-.caja {
-  background-color: #13b501;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #091dd1;
-  border-radius: 2px;
-  border-top: solid 0px;
-}
+
 
 .item {
   color: #ffffff;
@@ -380,10 +330,7 @@ a:hover {
   max-height: 500px; /* Ajusta el tamaño máximo de la imagen según tu preferencia */
 }
 
-.title {
-  font-weight: bold;
-  margin-top: 0;
-}
+
 
 .description {
   margin-top: 5px;
@@ -402,9 +349,10 @@ ul li {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
- color: white;
+ color: rgb(255, 255, 255);
   width: 1200px;
   height: 560px;
+  
   
 }
 
@@ -719,7 +667,7 @@ th, td {
 
 
 #tablaObjetos {
-  background-color: #4caf50;
+  background-color: #224c78;
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
@@ -794,4 +742,6 @@ body {
 .high-contrast #DivContraste {
   background-color: #193d3d;
 }
+
+
 
